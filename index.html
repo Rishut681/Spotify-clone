@@ -425,7 +425,9 @@
         <div class="play-music-bar">
             <div class="left-content">
                 <div class="played-music-thumbnail">
-                    <div class="played-image"><img src="https://lh3.googleusercontent.com/gyw6VH1uRAGq01PIpjnv5c-UFgJV08xE5x4Fd061iJ0CfOcuZacKO7Ap1uyoX9ID_MMBkeEVFKmpK1U=w544-h544-l90-rj" alt="" />
+                    <div class="played-image"><img
+                            src="https://lh3.googleusercontent.com/gyw6VH1uRAGq01PIpjnv5c-UFgJV08xE5x4Fd061iJ0CfOcuZacKO7Ap1uyoX9ID_MMBkeEVFKmpK1U=w544-h544-l90-rj"
+                            alt="" />
                     </div>
                     <div class="played-title">
                         <h3>Khairiyat
@@ -438,13 +440,47 @@
                 </div>
             </div>
             <div class="centre-content">
-
-            </div>
-            <div class="right-content">
-
+                <div class="centre-content-up">
+                    <span class="material-symbols-outlined">
+                        shuffle
+                    </span>
+                    <span class="material-symbols-outlined">
+                        skip_previous
+                    </span>
+                    <span class="material-symbols-outlined">
+                        play_circle
+                    </span>
+                    <span class="material-symbols-outlined">
+                        skip_next
+                    </span>
+                    <span class="material-symbols-outlined">
+                        replay
+                    </span>
+                </div>
+                <div class="centre-content-down">
+                    <span id="current-time" class="time">0:00</span>
+                    <input type="range" id="seek-slider" max="100" value="26">
+                    <span id="duration" class="time">3:29</span>
+                </div>
+            </div>    
+                <div class="right-content">
+                    <span class="material-symbols-outlined">
+                        lyrics
+                    </span>
+                    <span class="material-symbols-outlined">
+                        queue_music
+                    </span>
+                    <span class="material-symbols-outlined">
+                        tap_and_play
+                    </span>
+                    <span class="material-symbols-outlined">
+                        volume_up
+                    </span>
+                    <input type="range" id="volume-slider" max="100" value="75">
+                </div>
             </div>
         </div>
-    </div>
+
 </body>
 
 </html>
