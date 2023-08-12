@@ -15,8 +15,8 @@ body{
 }
 .container{
   display: grid;
-  grid-template-columns: 230px auto;
-  grid-template-rows: 765px auto;
+  grid-template-columns: 230px (100vh-230px);
+  grid-template-rows: 765px 765px;
 
 }
 /* left nav start */
