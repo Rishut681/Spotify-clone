@@ -12,10 +12,13 @@
 
 body {
   background-color: rgba(0, 0, 0, 0.861);
+  display: flex;
+  justify-content: center;
 }
 .container {
+  height: 100%;
   display: grid;
-  grid-template-columns: 230px auto;
+  grid-template-columns: 230px calc(100vh);
   grid-template-rows: 765px auto;
 
 }
@@ -45,7 +48,7 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-.mainBody {
+.main {
   height: 740px;
   display: flex;
   overflow: hidden;
@@ -419,4 +422,51 @@ input:hover {
   width: 300px;
   height: 6px;
   margin-top: 13px;
+}
+@media (max-width:1540px) {
+  .container {
+    display: grid;
+    grid-template-columns: 230px auto;
+    grid-template-rows: 765px auto;
+  }
+}
+
+@media (min-width:1540px) {
+  .play-music-bar{
+    width: 1200px;
+  }
+}
+@media (max-width:840px) {
+  .container {
+    display: grid;
+    grid-template-columns: 230px 600px;
+    grid-template-rows: 765px auto;
+  }
+}
+
+@media (max-width:840px) {
+  .play-music-bar{
+    width: 820px;
+  }
+  .right-content input{
+    display: none;
+  }
+}
+
+@media (max-width:340px) {
+  .play-music-bar-parent{
+    margin-left: 300px;
+  }
+  .play-music-bar{
+    width: 390px;
+  }
+  .right-content{
+    display: none;
+  }
+  .left-content{
+    display: none;
+  }
+  .sidebar{
+    display: none;
+  }
 }

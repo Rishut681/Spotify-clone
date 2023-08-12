@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <!-- left nav -->
-        <div class="mainBody">
+        <div class="main">
             <!-- Sidebar Starts -->
             <div class="sidebar">
                 <div class="dot">
@@ -422,47 +422,48 @@
                 </div>
             </div>
         </div>
-        <div class="play-music-bar">
-            <div class="left-content">
-                <div class="played-music-thumbnail">
-                    <div class="played-image"><img
-                            src="https://lh3.googleusercontent.com/gyw6VH1uRAGq01PIpjnv5c-UFgJV08xE5x4Fd061iJ0CfOcuZacKO7Ap1uyoX9ID_MMBkeEVFKmpK1U=w544-h544-l90-rj"
-                            alt="" />
+        <div class="play-music-bar-parent">
+            <div class="play-music-bar">
+                <div class="left-content">
+                    <div class="played-music-thumbnail">
+                        <div class="played-image"><img
+                                src="https://lh3.googleusercontent.com/gyw6VH1uRAGq01PIpjnv5c-UFgJV08xE5x4Fd061iJ0CfOcuZacKO7Ap1uyoX9ID_MMBkeEVFKmpK1U=w544-h544-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="played-title">
+                            <h3>Khairiyat
+                            </h3>
+                            <a href="">Ariijit Singh </a>
+                        </div>
                     </div>
-                    <div class="played-title">
-                        <h3>Khairiyat
-                        </h3>
-                        <a href="">Ariijit Singh </a>
+                    <div class="like-current-music">
+                        <i class="material-icons">favorite</i>
                     </div>
                 </div>
-                <div class="like-current-music">
-                    <i class="material-icons">favorite</i>
+                <div class="centre-content">
+                    <div class="centre-content-up">
+                        <span class="material-symbols-outlined">
+                            shuffle
+                        </span>
+                        <span class="material-symbols-outlined">
+                            skip_previous
+                        </span>
+                        <span class="material-symbols-outlined">
+                            play_circle
+                        </span>
+                        <span class="material-symbols-outlined">
+                            skip_next
+                        </span>
+                        <span class="material-symbols-outlined">
+                            replay
+                        </span>
+                    </div>
+                    <div class="centre-content-down">
+                        <span id="current-time" class="time">0:00</span>
+                        <input type="range" id="seek-slider" max="100" value="26">
+                        <span id="duration" class="time">3:29</span>
+                    </div>
                 </div>
-            </div>
-            <div class="centre-content">
-                <div class="centre-content-up">
-                    <span class="material-symbols-outlined">
-                        shuffle
-                    </span>
-                    <span class="material-symbols-outlined">
-                        skip_previous
-                    </span>
-                    <span class="material-symbols-outlined">
-                        play_circle
-                    </span>
-                    <span class="material-symbols-outlined">
-                        skip_next
-                    </span>
-                    <span class="material-symbols-outlined">
-                        replay
-                    </span>
-                </div>
-                <div class="centre-content-down">
-                    <span id="current-time" class="time">0:00</span>
-                    <input type="range" id="seek-slider" max="100" value="26">
-                    <span id="duration" class="time">3:29</span>
-                </div>
-            </div>    
                 <div class="right-content">
                     <span class="material-symbols-outlined">
                         lyrics
@@ -480,6 +481,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
 </body>
 
