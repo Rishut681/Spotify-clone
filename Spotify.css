@@ -15,8 +15,9 @@ body {
 }
 .container {
   display: grid;
-  grid-template-columns: 230px calc(75vh);
+  grid-template-columns: 230px auto;
   grid-template-rows: 765px auto;
+
 }
 /* left nav start */
 .dot {
@@ -418,12 +419,4 @@ input:hover {
   width: 300px;
   height: 6px;
   margin-top: 13px;
-}
-
-@media (max-width:1580px) {
-  .container {
-    display: grid;
-    grid-template-columns: 230px auto;
-    grid-template-rows: 765px auto;
-  }
 }
